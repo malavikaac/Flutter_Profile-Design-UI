@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
 void main() {
-  runApp(const MyApp());
+  runApp(MyApp());
 }
 
 class MyApp extends StatelessWidget {
@@ -45,35 +45,30 @@ class _MyHomePageState extends State<MyHomePage> {
             fontWeight: FontWeight.bold),
       ),
       body: Container(
-        
         width: double.infinity,
         height: double.infinity,
         color: Color.fromARGB(255, 167, 163, 163),
         child: Center(
-          child: Row(mainAxisAlignment: MainAxisAlignment.start,
-           children: [
+          child: Row(mainAxisAlignment: MainAxisAlignment.start, children: [
             Padding(
               padding: EdgeInsets.fromLTRB(50, 10, 100, 50),
               child: Container(
                 width: 500,
                 height: 500,
                 decoration: BoxDecoration(
-                   color: Colors.white,
-                  borderRadius: BorderRadius.circular(20)
-                  ),
-              
+                    color: Colors.white,
+                    borderRadius: BorderRadius.circular(20)),
                 child: Padding(
                   padding: EdgeInsets.fromLTRB(53, 54, 142, 175),
                   child: Text(
                     "Malavika",
                     textAlign: TextAlign.left,
                     style: TextStyle(fontSize: 50.0),
-                    ),
                   ),
+                ),
               ),
             )
-          ]
-        ),
+          ]),
         ),
       ),
     );
